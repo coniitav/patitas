@@ -1,0 +1,44 @@
+body {
+
+}
+
+header {
+
+}
+footer {
+    background-color: #133E87;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px
+}
+
+.container-fluid > main > .row {
+    margin: 0px;
+}
+ 
+.social-media {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.social-media a {
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 3px;
+}
+
+.social-media a:hover {
+    color: #CBDCEB;
+    border-color: #CBDCEB
+}

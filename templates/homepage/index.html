@@ -13,38 +13,16 @@
     </form>
 </section>
 <section class="row">
-    <div class="col">
-        <div class="card">
-            <img class="w-100 card-image-top" src="https://whoofpoint.com/media/images/card_id/profile_73870520.png">
-            <div class="card-body">
-                <h4 class="card-title">Juan Carlos</h4>
+    {% for proveedor in providers %}
+        <div class="col-3 mb-2">
+            <div class="card">
+                <img class="w-100 card-image-top" src="{{proveedor.foto}}">
+                <div class="card-body">
+                    <h4 class="card-title">{{proveedor.first_name}} {{proveedor.last_name}}</h4>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img class="w-100 card-image-top" src="https://whoofpoint.com/media/images/card_id/profile_73870520.png">
-            <div class="card-body">
-                <h4 class="card-title">Juan Carlos</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img class="w-100 card-image-top" src="https://whoofpoint.com/media/images/card_id/profile_73870520.png">
-            <div class="card-body">
-                <h4 class="card-title">Juan Carlos</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img class="w-100 card-image-top" src="https://whoofpoint.com/media/images/card_id/profile_73870520.png">
-            <div class="card-body">
-                <h4 class="card-title">Juan Carlos</h4>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </section>
  
 {% endblock %}
