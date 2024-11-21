@@ -37,3 +37,16 @@ def index(request):
         ]
     }
     return render(request, "homepage/index.html", context)
+
+from django.shortcuts import redirect
+def feedback_create(request):
+    if request.method == "POST":
+        data = request.POST.copy()
+        print("++", data)
+
+        return redirect("/feedback/gracias")
+    
+    return redirect("/")
+
+def feedback_gracias(request):
+    return render(request, "homepage/feedback_gracias.html")
